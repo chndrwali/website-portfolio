@@ -39,7 +39,6 @@ import {
   
   import {
     SiDjango,
-    SiSqlite,
     SiJavascript,
     SiBootstrap,
     SiReact,
@@ -70,7 +69,7 @@ import {
     SiGooglemaps,
     SiOpenai,
     SiGooglecloud,
-    SiNextdotjs
+    SiNextdotjs,
   } from "react-icons/si";
   
   import {
@@ -81,11 +80,10 @@ import {
     IoIosNotificationsOutline
   } from "react-icons/io";
   
-  import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
+  import { DiCss3, DiJava, DiMsqlServer, DiRuby ,} from "react-icons/di";
   
   export const resumeLink = "https://drive.google.com/file/d/1wkPu9i_e2uAdHmbqe0hEM9BfBheJfxkT/view?usp=sharing";
-  export const repoLink = "https://github.com/mittal-parth/personal-portfolio";
-  
+  export const repoLink = "https://github.com/chndrwali/website-portfolio";
   export const callToAction = "https://www.linkedin.com/in/chndrwali";
   
   export const navLinks = [

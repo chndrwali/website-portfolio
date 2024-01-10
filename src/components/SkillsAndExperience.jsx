@@ -42,7 +42,7 @@ const Content = ({ text, link }) => {
       <p className="font-poppins font-normal text-[14px] text-dimWhite mt-4">
         - {text}{" "}
         {link ? (
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             <BsLink45Deg
               size="1rem"
               className="inline hover:text-teal-200"

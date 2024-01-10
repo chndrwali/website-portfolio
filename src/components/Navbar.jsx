@@ -6,9 +6,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full  flex justify-between items-center navbar">
+    <nav className="w-full flex justify-between items-center navbar">
       {/* Logo */}
-      <a href="#home">
+      <a href="#home" >
         <img
           src={parthmittal}
           alt="Candra Wali Sanjaya"
