@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import { socialMedia, aboutMe } from "../constants";
-import { profilePic } from "../assets";
+import { profilePic } from "../../public/assets";
 import { layout } from "../style";
 import { resumeLink, repoLink } from "../constants";
 import { AiFillGithub } from "react-icons/ai";
@@ -27,7 +27,7 @@ const Footer = () => (
               target="_blank"
               key={social.id}
               index={index}
-              className="text-white mr-5 text-[25px] hover:text-teal-200"
+              className="text-white mr-5 text-[25px] hover:text-teal-200" rel="noreferrer"
             >
               {React.createElement(social.icon)}
             </a>
@@ -36,10 +36,10 @@ const Footer = () => (
 
         <div className="grid grid-cols-2">
           {/* styles is a prop */}
-          <a href={resumeLink} target="_blank">
+          <a href={resumeLink} target="_blank" rel="noreferrer">
             <Button styles="mt-10 mr-3" text="Resume" icon="AiFillGithub" />
           </a>
-          <a href={repoLink} target="_blank">
+          <a href={repoLink} target="_blank" rel="noreferrer">
             <Button
               styles="mt-10 inline-flex items-center justify-center"
               text="Star"

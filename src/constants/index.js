@@ -86,7 +86,7 @@ import {
   export const resumeLink = "https://drive.google.com/file/d/1wkPu9i_e2uAdHmbqe0hEM9BfBheJfxkT/view?usp=sharing";
   export const repoLink = "https://github.com/mittal-parth/personal-portfolio";
   
-  export const callToAction = "https://www.linkedin.com/in/mittal-parth";
+  export const callToAction = "https://www.linkedin.com/in/chndrwali";
   
   export const navLinks = [
     {
@@ -1052,32 +1052,32 @@ import {
     {
       id: "social-media-1",
       icon: AiFillLinkedin,
-      link: "https://www.linkedin.com/in/mittal-parth",
+      link: "https://www.linkedin.com/in/chndrwali",
     },
     {
       id: "social-media-2",
       icon: AiFillGithub,
-      link: "https://www.github.com/mittal-parth",
+      link: "https://www.github.com/chndrwali",
     },
     {
       id: "social-media-3",
       icon: AiFillMail,
-      link: "mailto:mittalparth22@gmail.com",
+      link: "mailto:chndrwali@gmail.com",
     },
     {
       id: "social-media-4",
       icon: AiOutlineTwitter,
-      link: "https://www.twitter.com/mittalparth_",
+      link: "https://www.twitter.com/chndrwali",
     },
     {
       id: "social-media-5",
       icon: AiFillInstagram,
-      link: "https://www.instagram.com/mittalparth_",
+      link: "https://www.instagram.com/chndrwali",
     },
   ];
   
   export const aboutMe = {
-      name: "Parth Mittal",
-      tagLine: "MTS Intern @Oracle | ETHIndia'22 Winner | 8x Hackathon Winner | Tech Lead @IRIS, NITK | Co-Chair @GDSC, NITK",
-      intro: "Student web-developer from India who is either busy improving his craft or pondering over the next big idea."
+      name: "Candra Wali Sanjaya",
+      tagLine: "Front End Web Developer | Machine Learning Developer | Informatics Engineering Student | Web Enthusiast ",
+      intro: "Student web-developer from Indonesia who is either busy improving his craft or pondering over the next big idea."
   }
