@@ -1,9 +1,9 @@
 import React from "react";
-import Button from "./Button";
-import { socialMedia, aboutMe } from "../constants";
-import { profilePic } from "../../public/assets";
-import { layout } from "../style";
-import { resumeLink, repoLink } from "../constants";
+import Button from "../Button";
+import { socialMedia, aboutMe } from "../../constants";
+import { profilePic } from "../../../public/assets";
+import { layout } from "../../style";
+import { resumeLink, repoLink } from "../../constants";
 import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => (

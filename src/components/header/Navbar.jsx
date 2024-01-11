@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { close, parthmittal, menu } from "../../public/assets";
-import { navLinks } from "../constants";
+import { close, parthmittal, menu } from "../../../public/assets";
+import { navLinks } from "../../constants";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

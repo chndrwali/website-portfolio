@@ -1,6 +1,6 @@
-import styles from "../style";
-import { arrowUp } from "../../public/assets";
-import { callToAction } from "../constants";
+import styles from "../../style";
+import { arrowUp } from "../../../public/assets";
+import { callToAction } from "../../constants";
 
 const LetsConnect = () => {
   return (
