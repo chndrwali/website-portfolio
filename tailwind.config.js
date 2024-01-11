@@ -8,7 +8,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      colors: {s
+      colors: {
         blueColors: '#255BE0',
         darkColors: '#191E23',
         lightColors: '#F2F2F2',
