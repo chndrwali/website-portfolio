@@ -1,11 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    swcMinify: true,
-    compiler: {
-      removeConsole: {
-        exclude: ['log'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
-    },
-  };
-  
-  module.exports = nextConfig;
+      {
+        protocol: "https",
+        hostname: "gist.githubusercontent.com",
+      },
+    ],
+  },
+  experimental: {
+    serverActions: true,
+  },
+};
+
+module.exports = nextConfig;
