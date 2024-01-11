@@ -79,9 +79,9 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'Learning Course',
+    title: 'TogetherBoost App',
     description: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.',
-    tags: ['Next.js 13', 'Tailwind', 'Typescript', 'React Query'],
+    tags: ['Vite', 'Tailwind', 'Express JS', 'Redux'],
     imageUrl: aedu,
     url: 'https://learning.aedu.id',
     gif: aedu_gif,
