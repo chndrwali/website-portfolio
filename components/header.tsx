@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data';
 import Link from 'next/link';
@@ -14,6 +14,11 @@ export default function Header() {
   const { language, setLanguage } = useLanguageContext();
   const handleToggleLanguage = () => {
     setLanguage(language === 'EN' ? 'ID' : 'EN');
+  };
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleToggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
     <header className="z-[999] bg-green-500 relative">
@@ -55,12 +60,42 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className="">
+      <div className="flex items-center">
         <p className="fixed md:top-10 top-5 sm:hidden left-10">Candra Wali Sanjaya</p>
         <button aria-label="EN" role="button" className="fixed md:top-10 top-5 right-10" onClick={handleToggleLanguage}>
           {language}
         </button>
       </div>
+      {/* Hamburger Menu */}
+      <button aria-label="Toggle menu" role="button" className="sm:hidden fixed top-5 left-5 z-50 p-2 min-h-[44px] min-w-[44px]" onClick={handleToggleMobileMenu}>
+        <div className="block bg-white w-6 h-1 mb-1"></div>
+        <div className="block bg-white w-6 h-1 mb-1"></div>
+        <div className="block bg-white w-6 h-1"></div>
+      </button>
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <motion.div className="sm:hidden fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-90 z-40 flex items-center justify-center" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}>
+          <ul className="flex flex-col items-center text-white text-centerr">
+            {links.map((link) => (
+              <li key={link.hash} className="mx-auto">
+                <Link
+                  className={clsx('py-3', {
+                    'font-bold': activeSection === link.name,
+                  })}
+                  href={link.hash}
+                  onClick={() => {
+                    setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
+                    setIsMobileMenuOpen(false); // Close the mobile menu on link click
+                  }}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      )}
     </header>
   );
 }
