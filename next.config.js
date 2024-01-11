@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    swcMinify: true,
+    compiler: {
+      removeConsole: {
+        exclude: ['log'],
+      },
+    },
+  };
+  
+  module.exports = nextConfig;
