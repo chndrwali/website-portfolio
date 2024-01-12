@@ -19,9 +19,9 @@ html.dark {
 }
 
 .btn-project:hover {
-  @apply bg-gray-800 border-gray-800;
+  @apply bg-gray-800 border-gray-800 dark:bg-slate-200 dark:border-slate-200;
 }
 
 .btn-project.active2 {
-  @apply bg-gray-900 border-gray-900;
+  @apply bg-gray-900 border-gray-900 dark:bg-slate-200 dark:border-slate-200;
 }
