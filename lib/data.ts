@@ -79,7 +79,7 @@ const ID = {
   SKILLS_ME: 'Skill',
   ABOUT_ME: 'Tentang Saya',
   ABOUT_ME_DESC:
-    'Sebagai seorang Frontend developer dengan pengalaman lebih dari 2 tahun, saya ahli dalam beberapa teknologi modern, termasuk React.js, Next.js, Vue.js, dan GraphQL. Saya juga mahir dalam TypeScript dan memiliki pengalaman dengan Jest untuk pengujian unit dan cypress untuk pengujian E2E. Saya bersemangat untuk menciptakan antarmuka yang ramah pengguna dan intuitif yang meningkatkan pengalaman pengguna. Saya selalu ingin mempelajari teknologi baru. Saat ini saya sedang mencari posisi penuh waktu sebagai Frontend Developer.',
+    'Sebagai seorang Junior Frontend Developer dan Machine Learning Developer dengan pengalaman lebih dari 1 tahun, saya memiliki keahlian dalam beberapa teknologi modern, termasuk React.js, Next.js, Vite.js, dan Tailwind. Saya juga memiliki keterampilan dalam mengembangkan dataset menjadi model, serta pengalaman dengan Jest untuk pengujian unit dan Cypress untuk pengujian end-to-end (E2E). Saya sangat antusias dalam menciptakan antarmuka yang ramah pengguna dan intuitif untuk meningkatkan pengalaman pengguna. Saya selalu bersemangat untuk mempelajari teknologi baru. Saat ini, saya sedang mencari peluang magang atau pekerjaan penuh waktu sebagai Frontend Developer atau Machine Learning Developer.',
   MY_PROJECT: 'Proyek dan Sertifikat Saya',
   MY_EXPERIENCE: 'Pengalaman Saya',
   SEND: 'Kirim Email',
@@ -89,7 +89,7 @@ const EN = {
   SKILLS_ME: 'My Skill',
   ABOUT_ME: 'About me',
   ABOUT_ME_DESC:
-    'As a frontend developer with 2 years of experience, I am skilled in several modern technologies, including React.js, Next.js, Vue.js, and GraphQL. I am also proficient in Typescript and have experience with Jest for unit testing and cypress for E2E testing. I am passionate about creating user-friendly and intuitive interfaces that enhance the user experience. I am always looking to learn new technologies. I am currently looking for a full-time position as a Frontend developer.',
+    'As a Junior Frontend Developer and Machine Learning Developer with more than 1 year of experience, I have expertise in several modern technologies, including React.js, Next.js, Vite.js, and Tailwind. I also have skills in developing datasets into models, as well as experience with Jest for unit testing and Cypress for end-to-end (E2E) testing. I am passionate about creating user-friendly and intuitive interfaces to enhance the user experience. I am always eager to learn new technologies. Currently, I am looking for internship opportunities or full-time work as a Frontend Developer or Machine Learning Developer.',
   MY_PROJECT: 'My Projects and Certificates',
   MY_EXPERIENCE: 'My Experience',
   SEND: 'Send Email',
