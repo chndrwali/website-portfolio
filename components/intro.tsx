@@ -82,7 +82,7 @@ export default function Intro() {
 
         <div className="flex items-center gap-2">
           <a
-            className="bg-white p-2 md:p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="flex items-center justify-center min-h-[44px] min-w-[44px] text-2xl rounded-full transition duration-300 ease-out bg-gradient-to-r from-[#0077B5] to-[#00669D] hover:from-[#00669D] hover:to-[#004E87] hover:text-white dark:from-[#004E87] dark:to-[#00669D] dark:hover:from-[#00669D] dark:hover:to-[#004E87] dark:hover:text-black"
             href="https://www.linkedin.com/in/chndrwali/"
             target="_blank"
             aria-label="Linkedin Candra Wali Sanjaya"
@@ -91,7 +91,7 @@ export default function Intro() {
           </a>
 
           <a
-            className="bg-white p-2 md:p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] md:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="flex items-center justify-center min-h-[44px] min-w-[44px] text-2xl rounded-full transition duration-300 ease-out bg-gradient-to-r from-white to-gray-800 hover:from-gray-800 hover:to-gray-900 hover:text-white dark:from-gray-900 dark:to-gray-800 dark:hover:from-gray-800 dark:hover:to-slate-200 dark:hover:text-gray-950"
             href="https://github.com/chndrwali"
             target="_blank"
             aria-label="Gihtub Candra Wali Sanjaya"
@@ -100,7 +100,7 @@ export default function Intro() {
           </a>
 
           <a
-            className="bg-white p-2 md:p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] md:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="flex items-center justify-center min-h-[44px] min-w-[44px] text-2xl rounded-full transition duration-300 ease-out bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#075E54] hover:text-white dark:from-[#075E54] dark:to-[#128C7E] dark:hover:from-[#128C7E] dark:hover:to-[#075E54] dark:hover:text-gray-950"
             href="https://wa.me/6289652648201?text=Hello Candra"
             target="_blank"
             aria-label="Whatsapp Candra Wali Sanjaya"
@@ -108,7 +108,7 @@ export default function Intro() {
             <FaWhatsapp />
           </a>
           <a
-            className="bg-white p-2 md:p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] md:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="flex items-center justify-center min-h-[44px] min-w-[44px] text-2xl rounded-full transition duration-300 ease-out bg-gradient-to-r from-[#FDCB52] to-[#F97316] hover:from-[#F97316] hover:to-[#DB2777] hover:text-white dark:from-[#DB2777] dark:to-[#F97316] dark:hover:from-[#F97316] dark:hover:to-[#DB2777] dark:hover:text-gray-950"
             href="https://instagram.com/chndrwali"
             target="_blank"
             aria-label="Instagram Candra Wali Sanjaya"
