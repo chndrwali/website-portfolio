@@ -72,6 +72,26 @@ export const projectsData = [
   },
 ] as const;
 
+export const certificatesData = [
+  {
+    title: 'Dicoding Indonesia',
+    description: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.',
+    tags: ['Vite', 'Tailwind', 'Express JS', 'Redux'],
+    imageUrl: aedu,
+    url: 'https://learning.aedu.id',
+  },
+] as const;
+
+export const modelsData = [
+  {
+    title: 'Orboit Future Academy',
+    description: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.',
+    tags: ['Vite', 'Tailwind', 'Express JS', 'Redux'],
+    imageUrl: aedu,
+    url: 'https://learning.aedu.id',
+  },
+] as const;
+
 export const skillsData = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'React Native', 'Next.js', 'Node.js', 'Git', 'Tailwind', 'MongoDB', 'Redux', 'GraphQL', 'Apollo', 'Express', 'Vue', 'Vuex', 'Cypress'] as const;
 
 const ID = {

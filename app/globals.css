@@ -13,3 +13,15 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+.btn-project {
+  @apply px-4 py-2 uppercase font-semibold text-white bg-gray-700 border border-gray-700 rounded transition duration-300 cursor-pointer dark:bg-slate-200 dark:text-gray-800;
+}
+
+.btn-project:hover {
+  @apply bg-gray-800 border-gray-800;
+}
+
+.btn-project.active2 {
+  @apply bg-gray-900 border-gray-900;
+}
