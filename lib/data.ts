@@ -185,6 +185,7 @@ export const skillsData = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', '
 
 const ID = {
   CONTACT_ME: 'Hubungi saya',
+  SKILLS_ME: 'Skill',
   ABOUT_ME: 'Tentang Saya',
   ABOUT_ME_DESC:
     'Sebagai seorang Frontend developer dengan pengalaman lebih dari 2 tahun, saya ahli dalam beberapa teknologi modern, termasuk React.js, Next.js, Vue.js, dan GraphQL. Saya juga mahir dalam TypeScript dan memiliki pengalaman dengan Jest untuk pengujian unit dan cypress untuk pengujian E2E. Saya bersemangat untuk menciptakan antarmuka yang ramah pengguna dan intuitif yang meningkatkan pengalaman pengguna. Saya selalu ingin mempelajari teknologi baru. Saat ini saya sedang mencari posisi penuh waktu sebagai Frontend Developer.',
@@ -193,9 +194,11 @@ const ID = {
     COURSE_DESC: 'Sebuah website kursus online menawarkan akses mudah ke berbagai kursus. Pengguna dapat belajar melalui video, bacaan, dan ujian tentang berbagai topik mulai dari keterampilan teknis hingga soft skill.',
   },
   MY_EXPERIENCE: 'Pengalaman Saya',
+  SEND: 'Kirim Email',
 };
 const EN = {
   CONTACT_ME: 'Contact me here',
+  SKILLS_ME: 'My Skill',
   ABOUT_ME: 'About me',
   ABOUT_ME_DESC:
     'As a frontend developer with 2 years of experience, I am skilled in several modern technologies, including React.js, Next.js, Vue.js, and GraphQL. I am also proficient in Typescript and have experience with Jest for unit testing and cypress for E2E testing. I am passionate about creating user-friendly and intuitive interfaces that enhance the user experience. I am always looking to learn new technologies. I am currently looking for a full-time position as a Frontend developer.',
@@ -204,6 +207,7 @@ const EN = {
     COURSE_DESC: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.',
   },
   MY_EXPERIENCE: 'My Experience',
+  SEND: 'Send Email',
 };
 
 export const TYPHOGRAPHY = {

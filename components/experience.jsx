@@ -8,19 +8,21 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import { experiencesData, TYPHOGRAPHY } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { useLanguageContext } from '@/context/language-context';
 import Link from "next/link";
 
 // Experience component
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
+  const { language } = useLanguageContext();
   const { theme } = useTheme();
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-8 mb-8 sm:mb-10 lg:mb-16">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{TYPHOGRAPHY[language].MY_EXPERIENCE}</SectionHeading>
       <VerticalTimeline lineColor="">
         <TimelineContent />
       </VerticalTimeline>
