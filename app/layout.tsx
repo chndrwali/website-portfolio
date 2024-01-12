@@ -12,7 +12,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Candra Wali Sanjaya | Front End Web Developer',
+  title: 'Candra Wali Sanjaya',
   description: 'Candra Wali Sanjaya is a frontend developer with 2 years+ of experience.',
 };
 
