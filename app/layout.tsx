@@ -1,3 +1,5 @@
+'use client';
+
 import Header from '@/components/header';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -27,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <LanguageProvider>
             <ActiveSectionContextProvider>
               <Header />
-              {children}
+              <main className="flex flex-col items-center px-4 sm:px-6 lg:px-8">{children}</main>
               <Footer />
               <Analytics />
               <Toaster position="top-right" />

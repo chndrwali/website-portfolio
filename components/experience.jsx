@@ -1,3 +1,4 @@
+// Import React library
 "use client";
 
 import React from "react";
@@ -12,25 +13,25 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import Link from "next/link";
 
-
-
-
+// Experience component
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experience" ref={ref} className="scroll-mt-8 mb-8 sm:mb-10 lg:mb-16">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">        
-         <TimelineContent/>
+      <VerticalTimeline lineColor="">
+        <TimelineContent />
       </VerticalTimeline>
     </section>
   );
 }
 
-const TimelineContent = () =>{
-  const {theme} = useTheme();
+// TimelineContent component
+const TimelineContent = () => {
+  const { theme } = useTheme();
+
   return (
     <React.Fragment>
       {experiencesData.map((item, index) => (
@@ -63,7 +64,7 @@ const TimelineContent = () =>{
           <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
             {item.description}
             {item.description?.includes('worked') && (
-              <Link className="text-white underline ml-1" href={"https://www.linkedin.com/in/amienulrana/"} target="_blank" rel="noreferrer">
+              <Link className="text-white underline ml-1" href={"https://www.linkedin.com/in/chndrwali/"} target="_blank" rel="noreferrer">
                 see more
               </Link>
             )}
@@ -72,4 +73,4 @@ const TimelineContent = () =>{
       ))}
     </React.Fragment>
   );
-}
+};
