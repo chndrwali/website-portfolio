@@ -69,9 +69,9 @@ export default function Header() {
       </div>
       {/* Hamburger Menu */}
       <button aria-label="Toggle menu" role="button" className="sm:hidden fixed top-1 left-1 z-50 p-2 min-h-[44px] min-w-[44px]" onClick={handleToggleMobileMenu}>
-        <div className="block bg-white w-6 h-1 mb-1"></div>
-        <div className="block bg-white w-6 h-1 mb-1"></div>
-        <div className="block bg-white w-6 h-1"></div>
+        <div className="block bg-gray-950 dark:bg-white w-6 h-1 mb-1"></div>
+        <div className="block bg-gray-950 dark:bg-white w-6 h-1 mb-1"></div>
+        <div className="block bg-gray-950 dark:bg-white w-6 h-1"></div>
       </button>
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
