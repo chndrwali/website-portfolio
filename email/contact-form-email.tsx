@@ -1,6 +1,5 @@
 import React from 'react';
-import { Html, Body, Head, Heading, Hr, Container, Preview, Section, Text } from '@react-email/components';
-import { Tailwind } from '@react-email/tailwind';
+import { Html, Body, Container, Section, Text, Heading, Hr, Preview } from '@react-email/components';
 
 type ContactFormEmailProps = {
   message: string;
@@ -10,29 +9,17 @@ type ContactFormEmailProps = {
 export default function ContactFormEmail({ message, senderEmail }: ContactFormEmailProps) {
   return (
     <Html>
-      <Head>
-        <style>{`
-          @media only screen and (max-width: 600px) {
-            .container {
-              width: 100% !important;
-              padding: 0 !important;
-            }
-          }
-        `}</style>
-      </Head>
       <Preview>New message from your portfolio site</Preview>
-      <Tailwind>
-        <Body className="bg-gray-100 text-black">
-          <Container className="container">
-            <Section className="bg-white borderBlack my-10 px-4 sm:px-6 lg:px-8 py-4 rounded-md">
-              <Heading className="leading-tight">You received the following message from the contact form</Heading>
-              <Text>{message}</Text>
-              <Hr />
-              <Text>The sender's email is: {senderEmail}</Text>
-            </Section>
-          </Container>
-        </Body>
-      </Tailwind>
+      <Body>
+        <Container>
+          <Section style={{ backgroundColor: '#ffffff', border: '1px solid #dddddd', borderRadius: '8px', padding: '20px', marginBottom: '10px' }}>
+            <Heading style={{ fontSize: '24px', color: '#333333' }}>You received a new message from the contact form</Heading>
+            <Text style={{ fontSize: '16px', color: '#333333', marginBottom: '10px' }}>{message}</Text>
+            <Hr style={{ borderTop: '1px solid #dddddd', margin: '20px 0' }} />
+            <Text style={{ fontSize: '16px', color: '#333333' }}>The sender's email is: {senderEmail}</Text>
+          </Section>
+        </Container>
+      </Body>
     </Html>
   );
 }
