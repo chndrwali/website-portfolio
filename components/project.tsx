@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { projectsData } from '@/lib/data';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -16,8 +16,6 @@ export default function Project({ title, description, tags, imageUrl, url }: Pro
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-
-  const [showGif, setShowGif] = useState(false);
 
   return (
     <motion.div
