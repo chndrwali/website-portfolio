@@ -73,7 +73,7 @@ export default function Projects() {
   };
 
   return (
-    <section ref={ref} id="projects" className="py-12 bg-white dark:bg-black">
+    <section ref={ref} id="projects" className="py-12">
       <SectionHeading>{TYPHOGRAPHY[language].MY_PROJECT}</SectionHeading>
       <div className="flex flex-wrap justify-center mb-8">
         <button
