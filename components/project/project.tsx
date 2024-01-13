@@ -16,7 +16,7 @@ export default function Project({ title, description, tags, imageUrl, url, githu
   };
 
   return (
-    <motion.div ref={ref} initial={{ opacity: 0, scale: 0.8 }} animate={controls} transition={{ duration: 0.5 }} onViewportEnter={handleAnimation} className="bg-white dark:bg-gray-800 dark:text-white shadow-md rounded-md p-4 flex flex-col">
+    <motion.div ref={ref} initial={{ opacity: 0, scale: 0.8 }} animate={controls} transition={{ duration: 0.5 }} onViewportEnter={handleAnimation} className="bg-white dark:bg-gray-800 dark:text-white shadow-md p-4 flex flex-col rounded-xl">
       <div className="relative h-40 md:h-48 mb-4 overflow-hidden rounded-md">
         <Image src={imageUrl} alt="Proyek yang saya kerjakan" layout="fill" objectFit="cover" quality={95} className="rounded-md image-animation" />
       </div>
@@ -34,13 +34,13 @@ export default function Project({ title, description, tags, imageUrl, url, githu
         </ul>
         <div className="flex mt-auto justify-between">
           <Link href={githubUrl} target="_blank" rel="noreferrer" passHref>
-            <p className="btn-project flex items-center">
+            <p className="btn-project flex items-center image-animation">
               <FaGithub className="mr-2" />
               Repositories
             </p>
           </Link>
           <Link href={url} target="_blank" rel="noreferrer" passHref>
-            <p className="btn-project flex items-center">
+            <p className="btn-project flex items-center image-animation">
               <FaExternalLinkAlt className="mr-2" />
               Website
             </p>

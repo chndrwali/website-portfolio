@@ -16,7 +16,7 @@ export default function Certificates({ title, description, tags, imageUrl, url, 
   };
 
   return (
-    <motion.div ref={ref} initial={{ opacity: 0, scale: 0.8 }} animate={controls} transition={{ duration: 0.5 }} onViewportEnter={handleAnimation} className="bg-white dark:bg-gray-800 dark:text-white shadow-md rounded-md p-4 flex flex-col">
+    <motion.div ref={ref} initial={{ opacity: 0, scale: 0.8 }} animate={controls} transition={{ duration: 0.5 }} onViewportEnter={handleAnimation} className="bg-white dark:bg-gray-800 dark:text-white shadow-md rounded-xl p-4 flex flex-col">
       <div className="relative h-40 md:h-48 mb-4 overflow-hidden rounded-md">
         <Image src={imageUrl} alt="Proyek yang saya kerjakan" layout="fill" objectFit="cover" quality={95} className="rounded-md image-animation" />
       </div>
@@ -34,7 +34,7 @@ export default function Certificates({ title, description, tags, imageUrl, url, 
         </ul>
         <div className="flex space-x-4 mt-auto">
           <Link href={url} target="_blank" rel="noreferrer" passHref>
-            <p className="btn-project flex items-center">
+            <p className="btn-project flex items-center image-animation">
               <FaExternalLinkAlt className="mr-2" />
               Credentials
             </p>
