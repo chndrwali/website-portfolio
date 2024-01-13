@@ -108,7 +108,7 @@ export const projectsData = [
     title: 'TogetherBoost App',
     description:
       'This website is the final project of the Certified Internship and Independent Study at Dicoding Indonesia Cycle 4. The project revolves around the theme of "Inclusivity in Education" and is built using React Vite for the frontend, Tailwind CSS as the styling framework, Express.js for the backend, and also incorporates the Redux library.',
-    tags: ['React Vite', 'Tailwind', 'Express JS', 'Redux'],
+    tags: ['Vite', 'Tailwind', 'Express JS', 'Redux'],
     imageUrl: togetherboost,
     url: 'https://togetherboost.vercel.app',
     githubUrl: 'https://github.com/chndrwali/capstone-fe',
@@ -117,7 +117,7 @@ export const projectsData = [
     title: 'Recycle Waste Wisely',
     description:
       'This website is the final project of the Certified Internship and Independent Study at Orbit Future Academy Batch 5. The project is specifically designed for an automated waste classification website. It is built using React Vite for the frontend, Tailwind CSS for styling, and TensorFlow.js for loading data from the model.',
-    tags: ['React Vite', 'Tailwind', 'Python', 'TensorFlow JS'],
+    tags: ['Vite', 'Tailwind', 'Python', 'TensorFlow JS'],
     imageUrl: rewwis,
     url: 'https://rewwis.vercel.app',
     githubUrl: 'https://github.com/chndrwali/PengelolaSampahMasyarakat',
@@ -126,7 +126,7 @@ export const projectsData = [
     title: 'Twitwar Forum',
     description:
       'As a final submission for the "Becoming a React Web Developer Expert" class, this website is constructed using React Vite, Tailwind CSS, and Redux. It effectively harnesses APIs provided by Dicoding Indonesia, showcasing the skills acquired throughout the course.',
-    tags: ['React Vite', 'Tailwind', 'Redux'],
+    tags: ['Vite', 'React', 'Tailwind', 'Redux'],
     imageUrl: twitwar,
     url: 'https://twitwar-forum.vercel.app/',
     githubUrl: 'https://github.com/chndrwali/twitwar-forum',
@@ -162,7 +162,7 @@ export const certificatesData = [
   {
     title: 'Menjadi React Web Developer Expert',
     description: 'Successfully completed the final project, which is a discussion web forum built using React Vite and is responsive on mobile devices.',
-    tags: ['Dicoding', 'Indonesia', 'React', 'Expert'],
+    tags: ['Dicoding', 'Redux', 'React', 'Expert'],
     imageUrl: reactexpert,
     url: 'https://www.dicoding.com/certificates/MRZMQRYJLPYQ',
     githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
@@ -170,7 +170,7 @@ export const certificatesData = [
   {
     title: 'Sertifikat Kelulusan Dicoding',
     description: 'Successfully completed the Front-End Web and Back-End Training in the Dicoding X Kampus Merdeka Angkatan 3 SIB Program.',
-    tags: ['Dicoding', 'Indonesia', 'MSIB', 'Cycle 4'],
+    tags: ['Dicoding', 'MSIB', 'Cycle 4'],
     imageUrl: kelulusandicoding,
     url: 'https://www.linkedin.com/in/chndrwali/details/certifications/1635541981815/single-media-viewer/?profileId=ACoAADVInc4B_JHLHqbVHb8NC7oF3-SuA6Oom8k',
     githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
@@ -178,7 +178,7 @@ export const certificatesData = [
   {
     title: 'Belajar Pengembangan Machine Learning',
     description: 'Successfully trained three datasets, namely text classification, time series, and image classification, using Google Colab and several machine learning libraries.',
-    tags: ['Dicoding', 'Indonesia', 'Machine', 'Learning'],
+    tags: ['Dicoding', 'Machine', 'Learning'],
     imageUrl: ml,
     url: 'https://www.dicoding.com/certificates/L4PQQ456VPO1',
     githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
@@ -197,7 +197,7 @@ export const modelsData = [
   {
     title: 'Submission Dicoding ',
     description: 'Successfully trained a dataset of images with 6 classes, achieving an accuracy of 95%, and a validation accuracy of 85%.',
-    tags: ['Machine', 'Transfer', 'Learning', 'Dicoding'],
+    tags: ['Machine', 'Transfer', 'Learning'],
     imageUrl: modeldicoding,
     url: 'https://github.com/chndrwali/Submission-ML-3-ImageClassification-Deployment',
     githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',

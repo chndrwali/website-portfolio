@@ -27,22 +27,22 @@ export default function Project({ title, description, tags, imageUrl, url, githu
         </div>
         <ul className="flex space-x-2 mb-4">
           {tags.map((tag, index) => (
-            <li key={index} className="text-gray-500 dark:text-gray-400">
+            <li key={index} className="whitespace-nowrap rounded-full bg-gray-600 dark:bg-gray-50 px-2.5 py-0.5 text-xs text-gray-100 dark:text-gray-900">
               {tag}
             </li>
           ))}
         </ul>
-        <div className="flex space-x-4 mt-auto">
+        <div className="flex mt-auto justify-between">
           <Link href={githubUrl} target="_blank" rel="noreferrer" passHref>
-            <p className="flex items-center text-gray-700 dark:text-gray-300">
+            <p className="btn-project flex items-center">
               <FaGithub className="mr-2" />
-              Repositori
+              Repositories
             </p>
           </Link>
           <Link href={url} target="_blank" rel="noreferrer" passHref>
-            <p className="flex items-center text-gray-700 dark:text-gray-300">
+            <p className="btn-project flex items-center">
               <FaExternalLinkAlt className="mr-2" />
-              Situs Web
+              Website
             </p>
           </Link>
         </div>

@@ -31,7 +31,7 @@ export default function Projects() {
     switch (selectedCategory) {
       case 'All':
         return (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {projectsData.map((project, index) => (
               <Project key={index} {...project} />
             ))}
@@ -45,7 +45,7 @@ export default function Projects() {
         );
       case 'Projects':
         return (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {projectsData.map((project, index) => (
               <Project key={index} {...project} />
             ))}
@@ -53,7 +53,7 @@ export default function Projects() {
         );
       case 'Certi':
         return (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {certificatesData.map((certificate, index) => (
               <Certificates key={index} {...certificate} />
             ))}
@@ -61,7 +61,7 @@ export default function Projects() {
         );
       case 'Model':
         return (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {modelsData.map((model, index) => (
               <Models key={index} {...model} />
             ))}
