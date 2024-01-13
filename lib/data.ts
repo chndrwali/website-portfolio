@@ -2,6 +2,22 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { LuGraduationCap } from 'react-icons/lu';
 import aedu from '@/public/images/aedu.webp';
+import Image from 'next/image';
+import python from '@/public/images/techstack/python.webp';
+import figma from '@/public/images/techstack/figma.webp';
+import git from '@/public/images/techstack/git.webp';
+import github from '@/public/images/techstack/github.webp';
+import react from '@/public/images/techstack/react.webp';
+import vscode from '@/public/images/techstack/vscode.webp';
+import tensorflow from '@/public/images/techstack/tensorflow.webp';
+import tensorflowjs from '@/public/images/techstack/tensorflowjs.webp';
+import keras from '@/public/images/techstack/keras.webp';
+import javascript from '@/public/images/techstack/javascript.webp';
+import tailwindcss from '@/public/images/techstack/tailwindcss.webp';
+import npm from '@/public/images/techstack/npm.webp';
+import vercel from '@/public/images/techstack/vercel.webp';
+import kaggle from '@/public/images/techstack/kaggle.webp';
+import googlecolab from '@/public/images/techstack/google-colab.webp';
 
 export const links = [
   {
@@ -92,7 +108,113 @@ export const modelsData = [
   },
 ] as const;
 
-export const skillsData = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'React Native', 'Next.js', 'Node.js', 'Git', 'Tailwind', 'MongoDB', 'Redux', 'GraphQL', 'Apollo', 'Express', 'Vue', 'Vuex', 'Cypress'] as const;
+export const skillsData = [
+  {
+    id: 0,
+    name: 'Python',
+    type: 'Programming Language',
+    imageUrl: python,
+    url: 'https://www.python.org/',
+  },
+  {
+    id: 1,
+    name: 'TensorFlow',
+    type: 'Machine Learning Library',
+    imageUrl: tensorflow,
+    url: 'https://www.tensorflow.org/',
+  },
+  {
+    id: 2,
+    name: 'TensorFlow.js',
+    type: 'Machine Learning Library',
+    imageUrl: tensorflowjs,
+    url: 'https://www.tensorflow.org/js',
+  },
+  {
+    id: 3,
+    name: 'Keras',
+    type: 'Deep Learning Library',
+    imageUrl: keras,
+    url: 'https://keras.io/',
+  },
+  {
+    id: 4,
+    name: 'JavaScript',
+    type: 'Programming Language',
+    imageUrl: javascript,
+    url: 'https://www.javascript.com/',
+  },
+  {
+    id: 5,
+    name: 'React',
+    type: 'Front-End Library',
+    imageUrl: react,
+    url: 'https://reactjs.org/',
+  },
+  {
+    id: 6,
+    name: 'Tailwind CSS',
+    type: 'CSS Framework',
+    imageUrl: tailwindcss,
+    url: 'https://tailwindcss.com/',
+  },
+  {
+    id: 7,
+    name: 'NPM',
+    type: 'Package Manager',
+    imageUrl: npm,
+    url: 'https://www.npmjs.com/',
+  },
+  {
+    id: 8,
+    name: 'Git',
+    type: 'Version Control',
+    imageUrl: git,
+    url: 'https://git-scm.com/',
+  },
+  {
+    id: 9,
+    name: 'GitHub',
+    type: 'Version Control Hosting',
+    imageUrl: github,
+    url: 'https://github.com',
+  },
+  {
+    id: 10,
+    name: 'Vercel',
+    type: 'Cloud Platform',
+    imageUrl: vercel,
+    url: 'https://vercel.com/',
+  },
+  {
+    id: 11,
+    name: 'Kaggle',
+    type: 'Dataset Platform',
+    imageUrl: kaggle,
+    url: 'https://www.kaggle.com/',
+  },
+  {
+    id: 12,
+    name: 'Google Colab',
+    type: 'Notebook IDE',
+    imageUrl: googlecolab,
+    url: 'https://colab.research.google.com/',
+  },
+  {
+    id: 13,
+    name: 'Visual Studio Code',
+    type: 'IDE',
+    imageUrl: vscode,
+    url: 'https://code.visualstudio.com/',
+  },
+  {
+    id: 14,
+    name: 'Figma',
+    type: 'Design Tool',
+    imageUrl: figma,
+    url: 'https://www.figma.com/',
+  },
+] as const;
 
 const ID = {
   CONTACT_ME: 'Hubungi saya',

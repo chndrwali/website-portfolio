@@ -1,11 +1,13 @@
 'use client';
 
+// Skills.tsx
 import React from 'react';
 import SectionHeading from './section-heading';
 import { skillsData, TYPHOGRAPHY } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
 import { useLanguageContext } from '@/context/language-context';
+import Tech from './tech/tech';
 
 const fadeInAnimationVariants = {
   initial: {
@@ -26,25 +28,28 @@ export default function Skills() {
   const { language } = useLanguageContext();
 
   return (
-    <section id="skills" ref={ref} className="mb-8 sm:mb-16 md:mb-20 lg:mb-28 max-w-[53rem] mx-auto scroll-mt-28 text-center">
-      <SectionHeading>{TYPHOGRAPHY[language].SKILLS_ME}</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData.map((skill, index) => (
-          <motion.li
-            className="bg-white dark:bg-white/10 dark:text-white/80 borderBlack rounded-xl px-5 py-3 mb-2 sm:mb-3 md:mb-4"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
-        ))}
-      </ul>
+    <section id="skills" ref={ref} className="py-12">
+      <div className="container mx-auto">
+        <div className="mb-8">
+          <SectionHeading>{TYPHOGRAPHY[language].SKILLS_ME}</SectionHeading>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skillsData.map((skill, index) => (
+            <motion.div
+              key={index}
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              custom={index}
+            >
+              <Tech key={index} {...skill} />
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
