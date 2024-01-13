@@ -3,6 +3,7 @@ import { modelsData } from '@/lib/data';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 type ModelProps = (typeof modelsData)[number];
 
@@ -24,7 +25,7 @@ export default function Certificates({ title, description, tags, imageUrl, url }
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <Link href={url} rel="noreferrer" target="_blank" className="block border border-black/5 rounded-lg overflow-hidden group-hover:border-gray-200 transition dark:border-white/10 dark:hover:border-white/20">
+      <div className="block border border-black/5 rounded-lg overflow-hidden group-hover:border-gray-200 transition dark:border-white/10 dark:hover:border-white/20">
         <div className="pt-4 pb-7 px-5 sm:pt-10 flex flex-col h-full">
           <div className="relative w-full h-[200px] overflow-hidden mb-5">
             <Image src={imageUrl} alt="Project I worked on" layout="fill" objectFit="cover" quality={95} className="rounded-lg shadow-2xl transition" />
@@ -38,8 +39,22 @@ export default function Certificates({ title, description, tags, imageUrl, url }
               </li>
             ))}
           </ul>
+          <div className="flex gap-4 mt-4">
+            <Link href={url} target="_blank" rel="noreferrer">
+              <p className="btn-project">
+                <FaGithub />
+                Repository
+              </p>
+            </Link>
+            <Link href={url} target="_blank" rel="noreferrer">
+              <p className="btn-project">
+                <FaExternalLinkAlt />
+                Website
+              </p>
+            </Link>
+          </div>
         </div>
-      </Link>
+      </div>
     </motion.div>
   );
 }
