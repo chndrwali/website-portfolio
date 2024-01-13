@@ -7,7 +7,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ title, description, tags, imageUrl, url }: ProjectProps) {
+export default function Project({ title, description, tags, imageUrl, url, githubUrl }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -30,17 +30,17 @@ export default function Project({ title, description, tags, imageUrl, url }: Pro
           <div className="relative w-full h-[200px] overflow-hidden mb-5">
             <Image src={imageUrl} alt="Project I worked on" layout="fill" objectFit="cover" quality={95} className="rounded-lg shadow-2xl transition" />
           </div>
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed h-[150px] overflow-hidden mb-5 text-gray-700 dark:text-white/70">{description}</p>
-          <ul className="flex flex-wrap gap-2 sm:mt-auto">
+          <h3 className="text-2xl font-semibold mb-2">{title}</h3>
+          <p className="leading-relaxed h-[150px] overflow-hidden mb-4 text-gray-700 dark:text-white/70">{description}</p>
+          <ul className="flex flex-wrap gap-2">
             {tags.map((tag, index) => (
-              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70" key={index}>
-                {tag}
+              <li key={index}>
+                <span className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">{tag}</span>
               </li>
             ))}
           </ul>
           <div className="flex gap-4 mt-4">
-            <Link href={url} target="_blank" rel="noreferrer">
+            <Link href={githubUrl} target="_blank" rel="noreferrer">
               <p className="btn-project">
                 <FaGithub />
                 Repository

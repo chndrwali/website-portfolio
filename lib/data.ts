@@ -1,8 +1,15 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { LuGraduationCap } from 'react-icons/lu';
-import aedu from '@/public/images/aedu.webp';
+
+// import project
+import togetherboost from '@/public/images/togetherboost.webp';
+import twitwar from '@/public/images/twitwar.webp';
+import rewwis from '@/public/images/rewwis.webp';
+import candrafood from '@/public/images/candrafood.webp';
 import Image from 'next/image';
+
+//import skills
 import python from '@/public/images/techstack/python.webp';
 import figma from '@/public/images/techstack/figma.webp';
 import git from '@/public/images/techstack/git.webp';
@@ -19,6 +26,17 @@ import vercel from '@/public/images/techstack/vercel.webp';
 import kaggle from '@/public/images/techstack/kaggle.webp';
 import googlecolab from '@/public/images/techstack/google-colab.webp';
 
+// import sertifikat
+import alibabacloud from '@/public/images/sertifikat/alibabasertifikat.webp';
+import reactexpert from '@/public/images/sertifikat/reactexpert.webp';
+import frontend from '@/public/images/sertifikat/frontendexpert.webp';
+import ml from '@/public/images/sertifikat/machinelearning.webp';
+import kelulusandicoding from '@/public/images/sertifikat/dicodingkelulusan.webp';
+import fundamental from '@/public/images/sertifikat/fundamental.webp';
+
+//import models
+import modeldicoding from '@/public/images/models/klasifikasidicoding.webp';
+import modelorbit from '@/public/images/models/klasifikasiorbit.webp';
 export const links = [
   {
     name: 'Home',
@@ -48,63 +66,141 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Frontend Enginner (aedu+)',
+    title: 'DevHandal (CodePolitan & Alibaba Cloud)',
     location: 'Bandung, Indonesia (Remote)',
-    description: 'I worked as a Frontend Enginner in startup ed...',
-    icon: React.createElement(CgWorkAlt),
-    date: 'June 2023 - Now',
+    description: 'I learn as a JavaScript Expert in...',
+    icon: React.createElement(LuGraduationCap),
+    date: 'Oct 2023 - Present',
+  },
+  {
+    title: 'IDCamp 2023 (Indosat & Dicoding)',
+    location: 'Bandung, Indonesia (Remote)',
+    description: 'I learn as a Machine Learning Developer in...',
+    icon: React.createElement(LuGraduationCap),
+    date: 'Sept 2023 - Present',
   },
 
   {
-    title: 'Frontend Developer (STRT Button)',
-    location: 'Medan, Indonesia (On-site)',
-    description: 'I worked as a Frontend dev in web3 compan...',
+    title: 'Orbit Kampus - Artificial Intelligences 4 Jobs',
+    location: 'Bandung, Indonesia (Remote)',
+    description: 'I learn and make projects in activities at...',
+    icon: React.createElement(CgWorkAlt),
+    date: 'Aug 2023 - Januari 2024',
+  },
+  {
+    title: 'Development Front End Web & Back End (MSIB Dicoding)',
+    location: 'Bandung, Indonesia (Remote)',
+    description: 'I learn and make projects in activities at...',
     icon: React.createElement(CgWorkAlt),
     date: 'Feb 2023 - June 2023',
   },
   {
-    title: 'Full Stack Developer (Armada Vision)',
-    location: 'Medan, Indonesia (Remote)',
-    description: 'I worked as a full stack developer and creat...',
-    icon: React.createElement(CgWorkAlt),
-    date: 'August 2022 - Feb 2023',
-  },
-  {
-    title: 'Graduated Highshcool',
-    location: 'Medan, Indonesia',
-    description: 'I graduated after 3 years studying software engineering. After 2 months, I immediately got a job as a full stack developer.',
+    title: 'Universitas Nasional Pasim',
+    location: 'Bandung, Indonesia',
+    description: 'I am currently studying at Pasim National University, I also take part in Independent Campus activities and also participate in coding learning community activities which are held online',
     icon: React.createElement(LuGraduationCap),
-    date: 'May 2022',
+    date: 'Aug 2020 - Present',
   },
 ] as const;
 
 export const projectsData = [
   {
     title: 'TogetherBoost App',
-    description: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.',
-    tags: ['Vite', 'Tailwind', 'Express JS', 'Redux'],
-    imageUrl: aedu,
-    url: 'https://learning.aedu.id',
+    description:
+      'This website is the final project of the Certified Internship and Independent Study at Dicoding Indonesia Cycle 4. The project revolves around the theme of "Inclusivity in Education" and is built using React Vite for the frontend, Tailwind CSS as the styling framework, Express.js for the backend, and also incorporates the Redux library.',
+    tags: ['React Vite', 'Tailwind', 'Express JS', 'Redux'],
+    imageUrl: togetherboost,
+    url: 'https://togetherboost.vercel.app',
+    githubUrl: 'https://github.com/chndrwali/capstone-fe',
+  },
+  {
+    title: 'Recycle Waste Wisely',
+    description:
+      'This website is the final project of the Certified Internship and Independent Study at Orbit Future Academy Batch 5. The project is specifically designed for an automated waste classification website. It is built using React Vite for the frontend, Tailwind CSS for styling, and TensorFlow.js for loading data from the model.',
+    tags: ['React Vite', 'Tailwind', 'Python', 'TensorFlow JS'],
+    imageUrl: rewwis,
+    url: 'https://rewwis.vercel.app',
+    githubUrl: 'https://github.com/chndrwali/PengelolaSampahMasyarakat',
+  },
+  {
+    title: 'Twitwar Forum',
+    description:
+      'As a final submission for the "Becoming a React Web Developer Expert" class, this website is constructed using React Vite, Tailwind CSS, and Redux. It effectively harnesses APIs provided by Dicoding Indonesia, showcasing the skills acquired throughout the course.',
+    tags: ['React Vite', 'Tailwind', 'Redux'],
+    imageUrl: twitwar,
+    url: 'https://twitwar-forum.vercel.app/',
+    githubUrl: 'https://github.com/chndrwali/twitwar-forum',
+  },
+  {
+    title: 'Candra Food',
+    description:
+      'The completion of the "Becoming a Front End Web Developer Expert" class is marked by this websites final submission. The project is crafted using JavaScript, embracing Progressive Web App principles, and showcasing meticulous CSS. It also maximizes the use of APIs made available by Dicoding Indonesia.',
+    tags: ['PWA', 'CSS', 'JavaScript', 'E2E'],
+    imageUrl: candrafood,
+    url: 'https://candrafood-pwa.vercel.app/',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
 ] as const;
 
 export const certificatesData = [
   {
-    title: 'Dicoding Indonesia',
-    description: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.',
-    tags: ['Vite', 'Tailwind', 'Express JS', 'Redux'],
-    imageUrl: aedu,
-    url: 'https://learning.aedu.id',
+    title: 'Menjadi Front End Web Developer Expert',
+    description: 'Successfully completed the final project, which is a restaurant catalog web app with a good user experience and functionality when accessed on mobile devices.',
+    tags: ['Dicoding', 'Jest', 'PWA', 'E2E'],
+    imageUrl: frontend,
+    url: 'https://www.dicoding.com/certificates/72ZD8YVQ9ZYW',
+  },
+  {
+    title: 'Belajar Fundamental Front-End Web Developer',
+    description: 'Successfully built a web application using JavaScript ES6, Web Components, Webpack as the module bundler, and displayed data from a REST API.',
+    tags: ['Dicoding', 'API', 'ES6', 'Webpack'],
+    imageUrl: fundamental,
+    url: 'https://www.dicoding.com/certificates/MEPJV5OJQP3V',
+  },
+  {
+    title: 'Menjadi React Web Developer Expert',
+    description: 'Successfully completed the final project, which is a discussion web forum built using React Vite and is responsive on mobile devices.',
+    tags: ['Dicoding', 'Indonesia', 'React', 'Expert'],
+    imageUrl: reactexpert,
+    url: 'https://www.dicoding.com/certificates/MRZMQRYJLPYQ',
+  },
+  {
+    title: 'Sertifikat Kelulusan Dicoding',
+    description: 'Successfully completed the Front-End Web and Back-End Training in the Dicoding X Kampus Merdeka Angkatan 3 SIB Program.',
+    tags: ['Dicoding', 'Indonesia', 'MSIB', 'Cycle 4'],
+    imageUrl: kelulusandicoding,
+    url: 'https://www.linkedin.com/in/chndrwali/details/certifications/1635541981815/single-media-viewer/?profileId=ACoAADVInc4B_JHLHqbVHb8NC7oF3-SuA6Oom8k',
+  },
+  {
+    title: 'Belajar Pengembangan Machine Learning',
+    description: 'Successfully trained three datasets, namely text classification, time series, and image classification, using Google Colab and several machine learning libraries.',
+    tags: ['Dicoding', 'Indonesia', 'Machine', 'Learning'],
+    imageUrl: ml,
+    url: 'https://www.dicoding.com/certificates/L4PQQ456VPO1',
+  },
+  {
+    title: 'Certified Developer Alibaba Cloud',
+    description: 'Successfully registered as a DevHandal participant and completed the class on creating a blog on the Alibaba-owned AWS Cloud platform.',
+    tags: ['Alibaba', 'Cloud', 'Developer', 'AWS'],
+    imageUrl: alibabacloud,
+    url: 'https://www.linkedin.com/in/chndrwali/details/certifications/1635548464440/single-media-viewer/?profileId=ACoAADVInc4B_JHLHqbVHb8NC7oF3-SuA6Oom8k',
   },
 ] as const;
 
 export const modelsData = [
   {
-    title: 'Orboit Future Academy',
-    description: 'Online course website offers easy access to a variety of courses. Users can learn through videos, readings, and exams on topics ranging from technical skills to soft skills.',
-    tags: ['Vite', 'Tailwind', 'Express JS', 'Redux'],
-    imageUrl: aedu,
-    url: 'https://learning.aedu.id',
+    title: 'Submission Dicoding ',
+    description: 'Successfully trained a dataset of images with 6 classes, achieving an accuracy of 95%, and a validation accuracy of 85%.',
+    tags: ['Machine', 'Transfer', 'Learning', 'Dicoding'],
+    imageUrl: modeldicoding,
+    url: 'https://github.com/chndrwali/Submission-ML-3-ImageClassification-Deployment',
+  },
+  {
+    title: 'Model Image Classification 12 Classes',
+    description: 'Successfully trained a dataset with 12 classes using the MobileNetV2 architecture and converted it into a TensorFlow.js model with an accuracy of 97%.',
+    tags: ['Orbit', 'Model', 'Final', 'Project'],
+    imageUrl: modelorbit,
+    url: 'https://github.com/chndrwali/model-klasifikasi-orbit',
   },
 ] as const;
 
