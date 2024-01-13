@@ -24,7 +24,7 @@ export default function Tech({ id, name, type, imageUrl, url }: SkillProps) {
       }}
       className="mx-auto mb-8 w-full max-w-xs md:max-w-sm lg:max-w-md"
     >
-      <div className="flex flex-col items-center text-center bg-white rounded-lg p-4 shadow-md">
+      <div className="flex flex-col items-center text-center bg-gray-950 dark:bg-slate-200 rounded-lg p-4 shadow-md">
         <div className="mb-2">
           <Image src={imageUrl} alt={`Logo ${name}`} width={96} height={96} className="rounded-full image-animation" />
         </div>
@@ -33,7 +33,7 @@ export default function Tech({ id, name, type, imageUrl, url }: SkillProps) {
             {name}
           </a>
         </h3>
-        <span className="text-gray-600">{type}</span>
+        <span className="text-slate-200 dark:text-gray-600">{type}</span>
       </div>
     </motion.div>
   );
