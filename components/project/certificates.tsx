@@ -1,58 +1,48 @@
 import { useRef } from 'react';
 import { certificatesData } from '@/lib/data';
 import Image from 'next/image';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 type CertificatesProps = (typeof certificatesData)[number];
 
-export default function Certificates({ title, description, tags, imageUrl, url }: CertificatesProps) {
+export default function Certificates({ title, description, tags, imageUrl, url, githubUrl }: CertificatesProps) {
+  const controls = useAnimation();
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['0 1', '1.33 1'],
-  });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const handleAnimation = async () => {
+    await controls.start({ opacity: 1, scale: 1 });
+  };
 
   return (
-    <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
-      }}
-      className="group mb-3 sm:mb-8 last:mb-0"
-    >
-      <div className="block border border-black/5 rounded-lg overflow-hidden group-hover:border-gray-200 transition dark:border-white/10 dark:hover:border-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pt-10 flex flex-col h-full">
-          <div className="relative w-full h-[200px] overflow-hidden mb-5">
-            <Image src={imageUrl} alt="Project I worked on" layout="fill" objectFit="cover" quality={95} className="rounded-lg shadow-2xl transition" />
-          </div>
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed h-[150px] overflow-hidden mb-5 text-gray-700 dark:text-white/70">{description}</p>
-          <ul className="flex flex-wrap gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70" key={index}>
-                {tag}
-              </li>
-            ))}
-          </ul>
-          <div className="flex gap-4 mt-4">
-            <Link href={url} target="_blank" rel="noreferrer">
-              <p className="btn-project">
-                <FaGithub />
-                Repository
-              </p>
-            </Link>
-            <Link href={url} target="_blank" rel="noreferrer">
-              <p className="btn-project">
-                <FaExternalLinkAlt />
-                Website
-              </p>
-            </Link>
-          </div>
+    <motion.div ref={ref} initial={{ opacity: 0, scale: 0.8 }} animate={controls} transition={{ duration: 0.5 }} onViewportEnter={handleAnimation} className="bg-white dark:bg-gray-800 dark:text-white shadow-md rounded-md p-4">
+      <div className="relative h-40 md:h-48 mb-4 overflow-hidden rounded-md">
+        <Image src={imageUrl} alt="Proyek yang saya kerjakan" layout="fill" objectFit="cover" quality={95} className="rounded-md" />
+      </div>
+      <div>
+        <h3 className="text-lg md:text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
+        <ul className="flex space-x-2 mb-4">
+          {tags.map((tag, index) => (
+            <li key={index} className="text-gray-500 dark:text-gray-400">
+              {tag}
+            </li>
+          ))}
+        </ul>
+        <div className="flex space-x-4">
+          <Link href={githubUrl} target="_blank" rel="noreferrer" passHref>
+            <p className="flex items-center text-gray-700 dark:text-gray-300">
+              <FaGithub className="mr-2" />
+              Repositori
+            </p>
+          </Link>
+          <Link href={url} target="_blank" rel="noreferrer" passHref>
+            <p className="flex items-center text-gray-700 dark:text-gray-300">
+              <FaExternalLinkAlt className="mr-2" />
+              Situs Web
+            </p>
+          </Link>
         </div>
       </div>
     </motion.div>

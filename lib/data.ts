@@ -149,6 +149,7 @@ export const certificatesData = [
     tags: ['Dicoding', 'Jest', 'PWA', 'E2E'],
     imageUrl: frontend,
     url: 'https://www.dicoding.com/certificates/72ZD8YVQ9ZYW',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
   {
     title: 'Belajar Fundamental Front-End Web Developer',
@@ -156,6 +157,7 @@ export const certificatesData = [
     tags: ['Dicoding', 'API', 'ES6', 'Webpack'],
     imageUrl: fundamental,
     url: 'https://www.dicoding.com/certificates/MEPJV5OJQP3V',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
   {
     title: 'Menjadi React Web Developer Expert',
@@ -163,6 +165,7 @@ export const certificatesData = [
     tags: ['Dicoding', 'Indonesia', 'React', 'Expert'],
     imageUrl: reactexpert,
     url: 'https://www.dicoding.com/certificates/MRZMQRYJLPYQ',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
   {
     title: 'Sertifikat Kelulusan Dicoding',
@@ -170,6 +173,7 @@ export const certificatesData = [
     tags: ['Dicoding', 'Indonesia', 'MSIB', 'Cycle 4'],
     imageUrl: kelulusandicoding,
     url: 'https://www.linkedin.com/in/chndrwali/details/certifications/1635541981815/single-media-viewer/?profileId=ACoAADVInc4B_JHLHqbVHb8NC7oF3-SuA6Oom8k',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
   {
     title: 'Belajar Pengembangan Machine Learning',
@@ -177,6 +181,7 @@ export const certificatesData = [
     tags: ['Dicoding', 'Indonesia', 'Machine', 'Learning'],
     imageUrl: ml,
     url: 'https://www.dicoding.com/certificates/L4PQQ456VPO1',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
   {
     title: 'Certified Developer Alibaba Cloud',
@@ -184,6 +189,7 @@ export const certificatesData = [
     tags: ['Alibaba', 'Cloud', 'Developer', 'AWS'],
     imageUrl: alibabacloud,
     url: 'https://www.linkedin.com/in/chndrwali/details/certifications/1635548464440/single-media-viewer/?profileId=ACoAADVInc4B_JHLHqbVHb8NC7oF3-SuA6Oom8k',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
 ] as const;
 
@@ -194,6 +200,7 @@ export const modelsData = [
     tags: ['Machine', 'Transfer', 'Learning', 'Dicoding'],
     imageUrl: modeldicoding,
     url: 'https://github.com/chndrwali/Submission-ML-3-ImageClassification-Deployment',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
   {
     title: 'Model Image Classification 12 Classes',
@@ -201,6 +208,7 @@ export const modelsData = [
     tags: ['Orbit', 'Model', 'Final', 'Project'],
     imageUrl: modelorbit,
     url: 'https://github.com/chndrwali/model-klasifikasi-orbit',
+    githubUrl: 'https://github.com/chndrwali/restaurant-catalogueWPA',
   },
 ] as const;
 
