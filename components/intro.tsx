@@ -30,7 +30,15 @@ export default function Intro() {
             duration: 0.2,
           }}
         >
-          <Image src="/hello.webp" alt="Candra portrait" width="200" height="200" priority={true} quality={99} className="h-20 w-20 md:h-40 md:w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl image-animation" />
+          <Image
+            src="/hello.webp"
+            alt="Candra portrait"
+            width="200"
+            height="200"
+            priority={true}
+            quality={99}
+            className="h-20 w-20 md:h-40 md:w-40 rounded-full object-cover border-[0.35rem] border-gray-950 dark:border-white shadow-xl image-animation"
+          />
         </motion.div>
       </div>
 
