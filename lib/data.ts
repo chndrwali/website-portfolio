@@ -135,7 +135,7 @@ export const projectsData = [
   {
     title: 'Srym Store',
     description:
-      'As a final submission for the "Becoming a React Web Developer Expert" class, this website is constructed using React Vite, Tailwind CSS, and Redux. It effectively harnesses APIs provided by Dicoding Indonesia, showcasing the skills acquired throughout the course.',
+      'This website is created to fulfill the needs of the final semester exam for the E-Commerce course at National Pasim University. Utilizing Progressive Web Apps, Tailwind CSS, and Eslint, we emphasize responsiveness, aesthetic design, and code quality. Progressive Web Apps ensure easy access, Tailwind CSS provides an intuitive interface, and Eslint guarantees high-quality code.',
     tags: ['PWA', 'Eslint', 'JavaScript'],
     imageUrl: srymstore,
     url: 'https://srymecommerce.netlify.app/',
