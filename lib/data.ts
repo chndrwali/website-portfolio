@@ -7,6 +7,7 @@ import togetherboost from '@/public/images/togetherboost.webp';
 import twitwar from '@/public/images/twitwar.webp';
 import rewwis from '@/public/images/rewwis.webp';
 import candrafood from '@/public/images/candrafood.webp';
+import srymstore from '@/public/images/SrymStore.webp';
 import Image from 'next/image';
 
 //import skills
@@ -130,6 +131,15 @@ export const projectsData = [
     imageUrl: twitwar,
     url: 'https://twitwar-forum.vercel.app/',
     githubUrl: 'https://github.com/chndrwali/twitwar-forum',
+  },
+  {
+    title: 'Srym Store',
+    description:
+      'As a final submission for the "Becoming a React Web Developer Expert" class, this website is constructed using React Vite, Tailwind CSS, and Redux. It effectively harnesses APIs provided by Dicoding Indonesia, showcasing the skills acquired throughout the course.',
+    tags: ['PWA', 'Eslint', 'JavaScript'],
+    imageUrl: srymstore,
+    url: 'https://srymecommerce.netlify.app/',
+    githubUrl: 'https://github.com/chndrwali/WebEcommerce',
   },
   {
     title: 'Candra Food',
