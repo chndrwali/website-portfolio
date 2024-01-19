@@ -8,6 +8,7 @@ import twitwar from '@/public/images/twitwar.webp';
 import rewwis from '@/public/images/rewwis.webp';
 import candrafood from '@/public/images/candrafood.webp';
 import srymstore from '@/public/images/SrymStore.webp';
+import maskedapp from '@/public/images/maskedapp.webp';
 import Image from 'next/image';
 
 //import skills
@@ -140,6 +141,15 @@ export const projectsData = [
     imageUrl: srymstore,
     url: 'https://srymecommerce.netlify.app/',
     githubUrl: 'https://github.com/chndrwali/WebEcommerce',
+  },
+  {
+    title: 'Masked Apps',
+    description:
+      'This website is created to fulfill the needs of the final semester exam for the Sistem Pakar course at National Pasim University. Creted using Vite, Tailwind CSS, and TensorFlowJS, we emphasize responsiveness, aesthetic design, and code quality.  Tailwind CSS provides an intuitive interface, and Eslint guarantees high-quality code.',
+    tags: ['Vite', 'Tensorflow JS', 'Tailwind'],
+    imageUrl: maskedapp,
+    url: 'https://maskedapp.vercel.app/',
+    githubUrl: 'https://github.com/chndrwali/MaskedApps',
   },
   {
     title: 'Candra Food',
